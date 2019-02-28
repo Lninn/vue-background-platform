@@ -4,12 +4,13 @@
     <div class="ms-login">
       <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="0px" class="demo-ruleForm">
         <el-form-item prop="username">
-          <el-input v-model="ruleForm.username" placeholder="用户名"></el-input>
+          <el-input v-model="ruleForm.username" placeholder="用户名 (any)"></el-input>
         </el-form-item>
         <el-form-item prop="password">
           <el-input type="password"
             v-model="ruleForm.password"
             @keyup.enter.native="submitForm('ruleForm')"
+            placeholder="密码 (any)"
           >
           </el-input>
         </el-form-item>
